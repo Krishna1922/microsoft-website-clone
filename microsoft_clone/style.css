@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+/* ------------------------------------------------navbar starts ---------------------------------------------------*/
+.navbar{
+    
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+.nav{
+    display: flex;
+    
+}
+.logo{
+    height: 23px;
+    cursor: pointer;
+}
+.nav-head{
+    padding-top: 11px;
+}
+.list-head{
+    display: flex;
+    padding-left: 32px;
+    padding-top: 14px;
+}
+.list-item{
+    padding: 0px 8px;
+    cursor: pointer;
+    
+}
+.list-item:hover{
+    text-decoration: underline;
+}
+
+.nav-right{
+    display: flex;
+  padding-top: 7px;
+    
+    align-items: center;
+}
+.search-item{
+    display: flex;
+}
+.search{
+    display: flex;
+}
+.microsoft{
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+.microsoft:hover{
+    text-decoration: underline;
+}
+i{
+    cursor: pointer;
+}
+.fas-search{
+    padding-top: 6px;
+    padding-right: 7px;
+    padding-left: 15px;
+}
+
+.cart{
+    padding-left: 6px;
+    padding-top: 7px;
+    padding-right: 14px;
+    
+}
+.profile{
+    height: 34px;
+    cursor: pointer;
+} 
+.navbar{
+    background-color: rgb(245, 250, 245);
+    margin: 0 5%;
+    padding: 5px 0;
+}
+
+@media(max-width:950px){
+    .list-head,.microsoft{
+        display: none;
+    }
+    .nav-head{
+        display: block;
+        text-align: center;
+    }
+    .nav-right{
+        padding-top: 0;
+    }
+    .search-item{
+        padding-top: 7px;
+    }
+    .profile{
+        margin-top: 5px;
+    }
+   /* ----------------------carousal----------------- */
+    
+   /* ----------------------carousal----------------- */
+    /* ------------------query for main-------------- */
+    .ul-items{
+        display: flex;
+        flex-direction: column;
+        /* justify-content:left; */
+    }
+    .main{
+        justify-content: left;
+    }
+    .elements{
+        display: flex;
+
+    }
+    .main .ul-items .elements div{
+        width: auto;
+        align-items: center;
+        
+    }
+    .cs-1{
+        margin: 0;
+        height: 27px;
+    }
+    .elements:hover{
+        text-decoration: underline;
+    }
+    /* ------------------query for main-------------- */
+}
+/*- ----------------------------------------navbar ends------------------------------------------ */
+/*------------------------------------------- main starts------------------------------------- */
+@media(min-width:950px){
+    .main{
+        justify-content: center;
+    }
+    .cs-1{
+        margin: auto;
+    }
+}
+.main{
+    display: flex;
+    padding: 5% 5%;
+    
+}
+.ul-items{
+    display: flex;
+    /* justify-content: space-around; */
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+.cs-1{
+    display: block;
+    
+    padding-bottom: 5px;
+}
+.elements{
+    /* border: 2px solid black; */
+    padding: 11px 0;
+    cursor: pointer;
+}
+.elements:hover{
+    text-decoration: underline;
+}
+.div-elements{
+    text-align: center;
+    padding: 0 8px;
+    width: 170px;
+}
+/*--------------------------------------------- main ends -------------------------------------------*/
+/* ---------------------------------grid starts---------------------- */
+.grid{
+    display: grid;    grid-template-columns:repeat(4, 1fr);
+    padding: 0 5%;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    grid-gap: 32px;
+}
+
+.grid-image{
+    width: 100%;
+}
+.grid .grid-item h3{
+    margin-top: 25px;
+}
+span{
+    font-weight: 600;
+}
+
+p{
+    margin-top: 5px;
+}
+/* ---------------------------------grid starts---------------------- */
+
+/* ---------------------------------photo----------------------------------- */
+
+.photo .abso p{
+    padding: 12px 0 29px 0;
+    margin: 0;
+}
+.photo .abso h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photo .abso a{
+    padding: 8px 19px;
+    margin-top: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+} 
+.photo{
+
+    width: 100%;
+    height: 450px;
+    background: url(./images/lady1.webp) no-repeat center center;
+}
+.abso{
+    position: relative;
+    left: 8%;
+    max-width: 360px;
+    padding: 163px 0;
+}
+/* 
+---------------------------------photo----------------------------------- */
+.business{
+    padding: 0 5%;
+}
+.abs{
+    margin: 1% 0;
+}
+.futup{
+    padding: 2.5% 5%;
+    align-items: center;
+    /* display: block; */
+    margin: 4% 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 222, 222);
+}
+.futup1{
+    padding: 2% 5%;
+    display: flex;
+    
+}
+.futup-m{
+    padding-top: 3px;
+}
+.icon{
+    padding: 0 8px;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media(max-width:950px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:500px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* ------------------------------footer starts--------------------------- */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: rgb(241, 241, 241);
+    padding: 2% 5%;
+}
+.footer-main{
+    padding: 20px 10px;
+}
+.footer-mid{
+    color: #616161;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.list-fut-item{
+    font-size: 11px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.list-fut-item:hover{
+    text-decoration: underline;
+}
+@media(max-width:1080px){
+    .footer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:580px){
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+/* ------------------------------footer starts--------------------------- */
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: rgb(241, 241, 241);
+}
+
+.last ul{
+    display: flex;
+    font-size: 11px;
+    padding-top: 4px;
+}
+.last-item{
+    padding: 0 15px;
+}
+@media(max-width:766px){
+    .last{
+        flex-direction: column;
+    }
+}
+@media(max-width:636px){
+    .last ul{
+        flex-wrap: wrap;
+    }
+}
+/*---------------------------------------------- .carousal starts----------------------------------------------------------------- */
+.carousal{
+    padding: 0 5%;
+}
+.carousal-main
+{
+    background: url(./images/carousal.webp) no-repeat center center;
+   width: 100%;
+    background-size: cover;
+
+}
+.carousal-item{
+
+    position: relative;
+    left: 5%;
+    max-width: 480px;
+    padding: 163px 0;
+}
+.carousal .carousal-main .carousal-item p,.carousal .carousal-media p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+/* .carousal-image{
+    display: none;
+} */
+.carousal .carousal-main .carousal-item a{
+    padding: 8px 19px;
+    margin-top: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.carousal .carousal-main .carousal-item a:hover{
+    opacity: 0.8;
+}
+.carousal .carousal-media a{
+    padding: 8px 19px;
+    margin-top: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.carousal .carousal-media a:hover{
+    opacity: .8;
+}
+@media(max-width:1084px){
+    .carousal-main{
+        background: url(./images/carousal-1.webp) no-repeat center center;
+        background-size: 100%;
+
+    }
+    .carousal{
+        padding: 0;
+    }
+    .carousal-item{
+        padding: 170px 0;
+        max-width: 340px;
+    }
+    
+}
+@media(max-width:830px){
+    .carousal-item{
+        padding: 125px 0;
+        
+    }
+}
+@media(max-width:740px){
+    .carousal-main{
+        background: url(./images/CAROUSAL-2.webp) no-repeat center center;
+        background-size: 100%;
+
+    }
+    .carousal-item{
+        
+       display: none;
+       
+    }
+    .carousal-image{
+        height: 100%;
+        width: 100%;
+    }
+    .carousal-media{
+        text-align: center;
+        padding: 10% 8%;
+        background-color: rgb(231, 228, 228);
+    }
+    
+    
+}
+@media(min-width:740px){
+    .carousal-image,.carousal-media{
+        display: none;
+    }
+}
+/*---------------------------------------------- .carousal ends----------------------------------------------------------------- */
